@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capo Chord Converter</title>
+    <link rel="stylesheet" href="capo.css">
+</head>
+<body>
+    <h1 id="title">Select your chord progression</h1>
+    <div id="chord-list">
+        <p id="c" onclick="copyChordC()">C</p>
+        <p id="c-sharp" onclick="copyChordCSharp()">C#</p>
+        <p id="d" onclick="copyChordD()">D</p>
+        <p id="e-flat" onclick="copyChordEFlat()">Eb</p>
+        <p id="e" onclick="copyChordE()">E</p>
+        <p id="f" onclick="copyChordF()">F</p>
+        <p id="f-sharp" onclick="copyChordFSharp()">F#</p>
+        <p id="g" onclick="copyChordG()">G</p>
+        <p id="a-flat" onclick="copyChordAFlat()">Ab</p>
+        <p id="a" onclick="copyChordA()">A</p>
+        <p id="b-flat" onclick="copyChordBFlat()">Bb</p>
+        <p id="b" onclick="copyChordB()">B</p>
+        <p id="c-minor" onclick="copyChordCm()">Cm</p>
+        <p id="c-sharp-minor" onclick="copyChordCSharpM()">C#m</p>
+        <p id="d-minor" onclick="copyChordDm()">Dm</p>
+        <p id="e-flat-minor" onclick="copyChordEFlatm()">Ebm</p>
+        <p id="e-minor" onclick="copyChordEm()">Em</p>
+        <p id="f-minor" onclick="copyChordFm()">Fm</p>
+        <p id="f-sharp-minor" onclick="copyChordFSharpm()">F#m</p>
+        <p id="g-minor" onclick="copyChordGm()">Gm</p>
+        <p id="a-flat-minor" onclick="copyChordAFlatm()">Abm</p>
+        <p id="a-minor" onclick="copyChordAm()">Am</p>
+        <p id="b-flat-minor" onclick="copyChordBFlatm()">Bbm</p>
+        <p id="b-minor" onclick="copyChordBm()">Bm</p>
+    </div>
+    <div id="chord-line-up-container">
+       
+    </div>
+    <div class="capo">
+        <form>
+            <p>Select your current capo:</p>
+            <input type="number" id="capo-number">
+            <p id="button" onclick="convert()">Convert</p>
+        </form>
+        <div id="chord-output">
+            <p></p>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="capo.js"></script>
+</body>
+</html>
